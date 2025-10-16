@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/details.js" defer type="module"></script>
-    <title>PRENOM - Harry Potter</title>
-  </head>
-  <body class="page_perso">
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/details.js" defer></script>
+  <title>Détail du Personnage</title>
+</head>
+
+<body class="page_perso">
+
+  <div id="main-container">
+
     <header class="header">
-      <div class="header__right">
-        <a href="index.html">
-        <img src="./images/logo/logo.png" />
-    </a>
- </div>
       <div class="header__left">
+        <a href="index.html">
+          <img src="./images/logo/logo.png" alt="Logo HP" />
+        </a>
         <h1>Wiki Harry Potter</h1>
-        <ul>
-          <li>Students</li>
-          <li>Staff</li>
-          <li>Houses</li>
-          <li>Spells</li>
-        </ul>
-        <img src="./images/menu.png" alt="" srcset="" />
+      </div>
+      <div class="header__right">
+        <img src="./images/menu.png" alt="Menu" />
       </div>
     </header>
+
     <main>
-      <section>
-        <h3>Harry Potter</h3>
-        <div class="perso">
-          <figure class="perso__left">
-            <img src="./images/characters/harry.webp" alt="" srcset="" />
-            <figcaption>Harry Potter</figcaption>
-          </figure>
-          <div class="perso__right">
-            
+      <h1 id="detail-name">HARRY POTTER</h1>
+
+      <section class="perso character-info-box">
+
+        <div class="perso__left character-image-container">
+          <img id="detail-image" src="./images/characters/harry.webp" alt="Photo du Personnage" />
+          <figcaption id="detail-actor">Daniel Radcliffe</figcaption>
+        </div>
+
+        <div class="perso__right info-details-list">
+
+          <div class="info-line"><strong>Gender:</strong> <span id="detail-gender">Male</span></div>
+          <div class="info-line"><strong>Eye:</strong> <span id="detail-eye">Green</span></div>
+          <div class="info-line"><strong>Hair:</strong> <span id="detail-hair">Black</span></div>
+          <div class="info-line"><strong>Date of Birth:</strong> <span id="detail-dob">31-07-1980</span></div>
+          <div class="info-line"><strong>Patronus:</strong> <span id="detail-patronus">Stag</span></div>
+          <div class="info-line"><strong>Species:</strong> <span id="detail-species">Human</span></div>
         </div>
       </section>
-      <section class="house__perso">
-        <img src="./images/logo/Gryffindor.png" alt="" srcset="" />
+
+      <section class="house__perso" id="house-emblem-container">
+        <img id="house-emblem-image" src="./images/logo/Gryffindor.png" alt="Emblème de la Maison" />
       </section>
+
+      <button onclick="window.history.back()">← Retour à l'accueil</button>
+
     </main>
+
     <footer>
       <p>Wiki Happy Potter is a FANDOM community</p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

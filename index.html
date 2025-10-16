@@ -1,38 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />    
-    <title>PRENOM - Harry Potter</title>
-  </head>
-  <body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Votre Prénom - Wiki Harry Potter</title>
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="main-container">
+
     <header class="header">
       <div class="header__right">
         <img src="./images/logo/logo.png" />
       </div>
       <div class="header__left">
         <h1>Harry Potter Fan base</h1>
-   
-        <img src="./images/menu.png" alt="" srcset="" />
+
+        <img src="./images/menu.png" alt="Menu"  />
       </div>
     </header>
+
     <main>
-      <h2>
+      <h2 class="welcome-title">
         Welcome !<br />
         Wiki Harry Potter
       </h2>
-      <section>
+
+      <section id="house-filters-section">
         <h3>HOUSES</h3>
-        <div class="houses"></div>
+        <div class="houses-container houses">
+          <div class="house-card" data-house="Gryffindor">
+            <img src="./images/logo/Gryffindor.png" alt="Blason Gryffondor">
+          </div>
+          <div class="house-card" data-house="Hufflepuff">
+            <img src="./images/logo/Hufflepuff.png" alt="Blason Poufsouffle">
+          </div>
+          <div class="house-card" data-house="Ravenclaw">
+            <img src="./images/logo/Ravenclaw.png" alt="Blason Serdaigle">
+          </div>
+          <div class="house-card" data-house="Slytherin">
+            <img src="./images/logo/Slytherin.png" alt="Blason Serpentard">
+          </div>
+        </div>
       </section>
-      <section>
-        <h3>Characters</h3>
-        <div class="characters"></div>
+
+      <section id="characters-section">
+        <h3>CHARACTERS</h3>
+        <div class="characters-container characters">
+
+          <div class="character-card static" data-house="Gryffindor" data-id="harry-potter">
+            <div class="character-circle">
+              <img src="./images/characters/harry.webp" alt="Harry Potter">
+            </div>
+            <p class="character-name">Harry Potter</p>
+          </div>
+
+          <div class="character-card static" data-house="Gryffindor" data-id="hermione-granger">
+            <div class="character-circle">
+              <img src="./images/characters/hermione.webp" alt="Hermione Granger">
+            </div>
+            <p class="character-name">Hermione Granger</p>
+          </div>
+
+          <div class="character-card static" data-house="Gryffindor" data-id="ron-weasley">
+            <div class="character-circle">
+              <img src="./images/characters/ron.webp" alt="Ron Weasley">
+            </div>
+            <p class="character-name">Ron Weasley</p>
+          </div>
+
+          <div class="character-card static" data-house="Slytherin" data-id="draco-malfoy">
+            <div class="character-circle">
+              <img src="./images/characters/draco.webp" alt="Draco Malfoy">
+            </div>
+            <p class="character-name">Draco Malfoy</p>
+          </div>
+
+          <div class="character-card static" data-house="Gryffindor" data-id="minerva-mcgonagall">
+            <div class="character-circle">
+              <img src="./images/characters/mcgonagall.webp" alt="Minerva McGonagall">
+            </div>
+            <p class="character-name">Minerva McGonagall</p>
+          </div>
+
+          <div class="character-card static" data-house="Slytherin" data-id="severus-snape">
+            <div class="character-circle">
+              <img src="./images/characters/snape.webp" alt="Severus Snape">
+            </div>
+            <p class="character-name">Severus Snape</p>
+          </div>
+
+        </div>
       </section>
     </main>
+
     <footer>
       <p>Wiki Happy Potter is a FANDOM community</p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
